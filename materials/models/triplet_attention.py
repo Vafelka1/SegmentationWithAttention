@@ -1,11 +1,6 @@
 ## https://arxiv.org/pdf/2010.03045.pdf
 ## https://github.com/jyhengcoder/Triplet-Attention-tf/blob/main/triplet_attention.py
 
-import tensorflow as tf
-from tensorflow.keras import layers
-from keras.layers.convolutional import UpSampling2D, Conv2D
-from keras.layers import BatchNormalization, Activation, MaxPooling2D
-#from utils import conv_kernel_initializer
 
 class BasicConv(object):
     def __init__(self, out_planes, kernel_size):
