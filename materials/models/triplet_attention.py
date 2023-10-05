@@ -2,14 +2,14 @@
 ## https://github.com/jyhengcoder/Triplet-Attention-tf/blob/main/triplet_attention.py
 import tensorflow as tf
 from tensorflow.keras import layers
-from keras.layers import UpSampling2D, Conv2D
+from keras.layers import UpSampling2D, Convolution2D 
 from keras.layers import BatchNormalization, Activation, MaxPooling2D
 
 class BasicConv(object):
     def __init__(self, out_planes, kernel_size):
         super(BasicConv, self).__init__()
         from keras.layers import Conv2D
-        self.conv = Conv2D(
+        self.conv = Convolution2D (
             out_planes,
             kernel_size=[kernel_size, kernel_size],
             strides=[1, 1],
