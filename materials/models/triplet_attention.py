@@ -8,6 +8,7 @@ from keras.layers import BatchNormalization, Activation, MaxPooling2D
 class BasicConv(object):
     def __init__(self, out_planes, kernel_size):
         super(BasicConv, self).__init__()
+        from keras.layers import Conv2D
         self.conv = Conv2D(
             out_planes,
             kernel_size=[kernel_size, kernel_size],
