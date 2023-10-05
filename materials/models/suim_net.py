@@ -6,12 +6,12 @@ import tensorflow as tf
 from tensorflow.keras import layers
 from tensorflow.keras.layers import Input
 from keras.models import Model
-from keras.layers.convolutional import UpSampling2D, Conv2D
+from keras.layers import UpSampling2D, Conv2D
 from keras.layers import BatchNormalization, Activation, MaxPooling2D
 from keras.layers import add, Lambda, Concatenate, ZeroPadding2D
 from tensorflow.keras.optimizers import Adam, SGD
 from keras.applications.vgg16 import VGG16
-from drive.MyDrive.CVproject.models.triplet_attention import TripletAttention
+from SegmentationWithAttention.materials.models.triplet_attention import TripletAttention
 #import vgg16
 
 ## https://blog.paperspace.com/attention-mechanisms-in-computer-vision-ecanet/
